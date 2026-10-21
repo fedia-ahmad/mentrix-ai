@@ -32,3 +32,6 @@ python -m pip install torch==2.9.1 torchvision==0.24.1 --index-url https://downl
 - Jupyter kernel execution: Passed
 - PyTorch CUDA detection: Passed
 - Project libraries import test: Passed
+
+- Environment recreation from requirements.txt: Passed (same machine)
+- CUDA verification in recreated environment: Passed

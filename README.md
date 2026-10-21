@@ -11,8 +11,13 @@ MENTRIX AI is an AI-assisted teaching assistant project designed to support atte
 ## Setup
 1. Create a virtual environment: `python -m venv .venv`
 2. Activate it on Windows: `.venv\Scripts\activate`
-3. Install project dependencies using `requirements.txt` once generated.
-4. Launch JupyterLab: `python -m jupyterlab`
+3. Install dependencies:
+   `python -m pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu126`
+4. Verify dependencies: `python -m pip check`
+5. Launch JupyterLab: `python -m jupyterlab`
+6. Open `notebooks/00_environment_check.ipynb` and select the project Python kernel.
+
+Note: This environment was tested on Windows 10 with Python 3.12 and an NVIDIA GPU supporting CUDA.
 
 ## Project Structure
 - `notebooks/`: Experiments and environment tests
